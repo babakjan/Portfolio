@@ -10,10 +10,11 @@
 	/* color palette */
 	--color-primary: #390da0;
 	--color-primary-light: #e2ddec;
+	--color-primary-washed: #5f3bb1;
 	--color-secondary: #fc721a;
 	--color-ternary: #ebf2fa;
 	--color-black: #27252b;
-	--color-black78: #5e5c61;
+	--color-black75: #5e5c61;
 	--color-black50: #939295;
 	--color-black25: #c9c9ca;
 	--color-black10: #e9e9ea;
@@ -22,6 +23,10 @@
 
 	/* typography */
 	/* font: font-style weight size/line-height font-family */
+	--font-h1: normal bold 5.5rem / normal "Roboto", sans-serif;
+	--font-h2: normal bold 4.125rem / normal "Roboto", sans-serif;
+	--font-h3: normal bold 3.125rem / normal "Roboto", sans-serif;
+	--font-paragraph: normal normal 21px / 37px "Poppins", sans-serif;
 	--font-small: normal normal 18px / normal "Poppins", sans-serif;
 
 	/* border radius */
@@ -41,37 +46,62 @@ body {
 	padding-right: 2rem;
 }
 
-.landing {
-	height: 90vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+/* general */
 
-.landing h1 {
-	margin: 100px;
-	font-size: 50px;
+p {
+	font: var(--font-paragraph);
+	color: var(--color-black75);
 }
 
 /* buttons */
 
 .btn {
 	border: 3px solid var(--color-primary);
-	padding: 0.4rem 2rem;
+	padding: 0.5rem 3rem;
 	border-radius: var(--radius-small);
+	text-decoration: none;
+	font: var(--font-paragraph);
 }
 
-.btn-secondary {
+.btn-secondary,
+.nav-links li a.btn-secondary {
 	color: var(--color-primary);
+	transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
 	background-color: var(--color-primary-light);
 }
 
-/* mobile */
-@media only screen and (max-width: 768px) {
-	.landing {
-		flex-direction: column;
+.btn-primary {
+	color: white;
+	background: var(--color-primary);
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background: var(--color-primary-washed);
+	border-color: var(--color-primary-washed);
+}
+
+@media only screen and (max-width: 850px) {
+	p {
+		font-size: 19px;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	.max-width {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.btn {
+		padding: 0.25rem 0;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.75rem;
 	}
 }

@@ -30,6 +30,7 @@ nav .nav-content {
 	justify-content: space-around;
 	align-items: center;
 	margin-left: auto;
+	z-index: 3;
 }
 
 .nav-links li a {
@@ -48,6 +49,14 @@ nav .nav-content {
 }
 
 .nav-links li a.active:hover {
+	text-decoration: none;
+}
+
+.nav-links li .btn-secondary {
+	padding: 0.4rem 2rem;
+}
+
+.nav-links li a.btn-secondary:hover {
 	text-decoration: none;
 }
 
@@ -158,6 +167,7 @@ nav .nav-content {
 		width: 100vw;
 		flex-direction: column;
 		justify-content: flex-start;
+		align-items: center;
 		padding-top: 6rem;
 		background: var(--color-primary);
 		clip-path: circle(100px at 100% -20%);
@@ -173,6 +183,7 @@ nav .nav-content {
 	.nav-links li {
 		opacity: 0;
 		margin-top: 3rem;
+		transform: translateX(-1.25rem);
 	}
 
 	.nav-links li a {
@@ -202,7 +213,7 @@ nav .nav-content {
 
 	/* contact button */
 
-	nav-links .btn-secondary:hover {
+	.nav-links .btn-secondary:hover {
 		background: none;
 	}
 }

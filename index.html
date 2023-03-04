@@ -9,6 +9,7 @@
 		<!-- css -->
 		<link rel="stylesheet" href="/styles/style.css" />
 		<link rel="stylesheet" href="/styles/navigation.css" />
+		<link rel="stylesheet" href="/styles/home-landing.css" />
 
 		<!-- js -->
 		<script src="scripts/app.js" defer></script>
@@ -31,15 +32,8 @@
 				</ul>
 
 				<!-- hamburger menu -->
-				<button
-					class="hamburger"
-					aria-controls="primary-navigation"
-					aria-expanded="false"
-				>
-					<svg
-						viewBox="0 0 100 100"
-						width="50"
-					>
+				<button class="hamburger" aria-controls="primary-navigation" aria-expanded="false">
+					<svg viewBox="0 0 100 100" width="50">
 						<line
 							class="line top"
 							x1="10"
@@ -67,11 +61,67 @@
 			</div>
 		</nav>
 
-		<section class="landing">
-			<img src="images/circles.svg" alt="circles" />
-			<h1>Heding</h1>
-		</section>
+		<!-- main -->
+		<main class="max-width">
+			<!-- landing -->
+			<section class="landing">
+				<!-- left column -->
+				<div class="left-column">
+					<!-- proposition -->
+					<h1>Full-stack webový vývojář</h1>
 
-		<main>TODO</main>
+					<p>
+						Zdravím, jmenuji se Jan Babák a zabývám se tvorbou webových aplikací.
+						Převážně pracuji s technologiemi JavaScript/TypeScript, Vue.js, Java a
+						Spring Boot.
+					</p>
+
+					<!-- buttons -->
+					<div class="btns">
+						<a href="#" class="btn btn-secondary">Kontakt</a>
+						<a href="#" class="btn btn-primary">Projekty</a>
+					</div>
+					<img
+						src="/images/homepage/arrow.svg"
+						alt="šipka na tlačítko projekty"
+						class="arrow"
+					/>
+				</div>
+
+				<img src="images/homepage/chevron.svg" alt="šikpka scrolluj" class="chevron" />
+
+				<!-- right column -->
+				<div class="right-column">
+					<img src="/images/homepage/landing.jpg" alt="Programátor u počítače." />
+				</div>
+
+				<!-- sparkles -->
+				<img
+					src="/images/homepage/sparkles/purple-dot-big.svg"
+					alt="fialová tečka"
+					class="sparkle purple-dot-big"
+				/>
+				<img
+					src="/images/homepage/sparkles/purple-dot-small.svg"
+					alt="fialová tečka"
+					class="sparkle purple-dot-small"
+				/>
+				<img
+					src="/images/homepage/sparkles/orange-dot.svg"
+					alt="oranžová tečka"
+					class="sparkle orange-dot1"
+				/>
+				<img
+					src="/images/homepage/sparkles/orange-triangle.svg"
+					alt="oranžový trojúhelník"
+					class="sparkle orange-triangle"
+				/>
+				<img
+					src="/images/homepage/sparkles/orange-dot.svg"
+					alt="oranžová tečka"
+					class="sparkle orange-dot2"
+				/>
+			</section>
+		</main>
 	</body>
 </html>
