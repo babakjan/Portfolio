@@ -115,12 +115,14 @@ nav .nav-content {
 
 	.hamburger .top {
 		--rotation: 45deg;
-		transform-origin: 35px 45px;
+		transform-origin: 35px 40px;
+		-webkit-transform-origin: 40px 50px;
 	}
 
 	.hamburger .bottom {
 		--rotation: -45deg;
 		transform-origin: 40px 55px;
+		-webkit-transform-origin: 40px 55px;
 	}
 
 	@keyframes to-close-icon {
@@ -133,10 +135,12 @@ nav .nav-content {
 		60% {
 			stroke-dashoffset: 79.9;
 			rotate: var(--rotation);
+			-webkit-transform: rotate(0.25turn);
 		}
 		100% {
 			stroke-dashoffset: 0;
 			rotate: var(--rotation);
+			-webkit-transform: rotate(0.25turn);
 		}
 	}
 
@@ -144,10 +148,12 @@ nav .nav-content {
 		0% {
 			stroke-dashoffset: 0;
 			rotate: var(--rotation);
+			-webkit-transform: rotate(0.25turn);
 		}
 		40% {
 			stroke-dashoffset: 79.9;
 			rotate: var(--rotation);
+			-webkit-transform: rotate(0.25turn);
 		}
 		60% {
 			stroke-dashoffset: 79.9;
