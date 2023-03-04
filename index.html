@@ -6,24 +6,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jan Babák</title>
 
+		<!-- css -->
 		<link rel="stylesheet" href="/styles/style.css" />
+		<link rel="stylesheet" href="/styles/navigation.css">
 
+		<!-- js -->
 		<script src="scripts/app.js" defer></script>
 	</head>
-	<body>
+	<body id="home">
 		<!-- navigation -->
 		<nav>
-			<div class="hamburger">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
+			<!-- navbar content -->
+			<div class="max-width nav-content">
+				<!-- logo -->
+				<img src="/images/logo-black.svg" alt="logo" class="logo" id="logo-black" />
+				<img src="/images/logo-white.svg" alt="logo" class="logo" id="logo-white" />
 
-			<ul class="nav-links">
-				<li><a href="#">Domů</a></li>
-				<li><a href="#">O mně</a></li>
-				<li><a href="#">Projekty</a></li>
-			</ul>
+				<!-- navigation links -->
+				<ul class="nav-links">
+					<li><a class="active">Domů</a></li>
+					<li><a href="#">O mně</a></li>
+					<li><a href="#">Projekty</a></li>
+					<li><a href="#" class="btn btn-secondary">Kontakt</a></li>
+				</ul>
+
+				<!-- hamburger menu -->
+				<div class="hamburger">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+			</div>
 		</nav>
 
 		<section class="landing">

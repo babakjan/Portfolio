@@ -1,0 +1,143 @@
+nav {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+nav .nav-content {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+/* logo */
+
+.logo {
+	height: 2rem;
+	z-index: 10;
+}
+
+#logo-white {
+	display: none;
+}
+
+/* nav links */
+
+.nav-links {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+
+.nav-links li a {
+	text-decoration: none;
+	font: var(--font-small);
+	color: var(--color-black);
+	margin-left: 2.5rem;
+}
+
+.nav-links li a:hover {
+	text-decoration: underline;
+}
+
+.nav-links li a.active {
+	font-weight: bold;
+}
+
+.nav-links li a.active:hover {
+	text-decoration: none;
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+	nav {
+		position: relative;
+	}
+
+	/* hamburger */
+
+	.hamburger {
+		position: absolute;
+		right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	.line {
+		width: 30px;
+		height: 3px;
+		background: var(--color-black);
+		margin: 3px;
+	}
+
+	/* logo */
+
+	#logo-white.nav-open {
+		display: inline-block;
+	}
+
+	#logo-black.nav-open {
+		display: none;
+	}
+
+	/* nav links */
+
+	.nav-links {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100vw;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 6rem;
+		background: var(--color-primary);
+		clip-path: circle(100px at 100% -20%);
+		-webkit-clip-path: circle(100px at 100% -20%);
+		transition: all 1s ease-out;
+	}
+
+	.nav-links.open {
+		clip-path: circle(2000px at 90% -10%);
+		-webkit-clip-path: circle(2000px at 90% -10%);
+	}
+
+	.nav-links li {
+		opacity: 0;
+		margin-top: 3rem;
+	}
+
+	.nav-links li a {
+		font-size: 1.5rem;
+		color: white;
+	}
+
+	.nav-links li:nth-child(1) {
+		transition: all 0.5s ease 0.2s;
+	}
+
+	.nav-links li:nth-child(2) {
+		transition: all 0.5s ease 0.4s;
+	}
+
+	.nav-links li:nth-child(3) {
+		transition: all 0.5s ease 0.6s;
+	}
+
+	.nav-links li:nth-child(4) {
+		transition: all 0.5s ease 0.8s;
+	}
+
+	li.fade {
+		opacity: 1;
+	}
+
+	/* button */
+
+	nav-links .btn-secondary:hover {
+		background: none;
+	}
+}
