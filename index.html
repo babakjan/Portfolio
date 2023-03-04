@@ -8,7 +8,7 @@
 
 		<!-- css -->
 		<link rel="stylesheet" href="/styles/style.css" />
-		<link rel="stylesheet" href="/styles/navigation.css">
+		<link rel="stylesheet" href="/styles/navigation.css" />
 
 		<!-- js -->
 		<script src="scripts/app.js" defer></script>
@@ -31,11 +31,39 @@
 				</ul>
 
 				<!-- hamburger menu -->
-				<div class="hamburger">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</div>
+				<button
+					class="hamburger"
+					aria-controls="primary-navigation"
+					aria-expanded="false"
+				>
+					<svg
+						viewBox="0 0 100 100"
+						width="50"
+					>
+						<line
+							class="line top"
+							x1="10"
+							x2="90"
+							y1="40"
+							y2="40"
+							stroke-width="8"
+							stroke-linecap="round"
+							stroke-dasharray="80"
+							stroke-dashoffset="0"
+						></line>
+						<line
+							class="line bottom"
+							x1="90"
+							x2="10"
+							y1="60"
+							y2="60"
+							stroke-width="8"
+							stroke-linecap="round"
+							stroke-dasharray="80"
+							stroke-dashoffset="0"
+						></line>
+					</svg>
+				</button>
 			</div>
 		</nav>
 

@@ -1,3 +1,5 @@
+/* nav */
+
 nav {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -49,38 +51,101 @@ nav .nav-content {
 	text-decoration: none;
 }
 
+/* hamburger */
+.hamburger {
+	display: none;
+}
+
 /* mobile */
 @media only screen and (max-width: 768px) {
+	/* nav */
+
 	nav {
 		position: relative;
+	}
+
+	/* logo */
+
+	#logo-white.nav-opened {
+		display: inline-block;
+	}
+
+	#logo-black.nav-opened {
+		display: none;
 	}
 
 	/* hamburger */
 
 	.hamburger {
 		position: absolute;
+		display: inline;
 		right: 5%;
 		top: 50%;
 		transform: translate(-5%, -50%);
+		border: none;
+		background: none;
 		cursor: pointer;
 		z-index: 10;
 	}
 
-	.line {
-		width: 30px;
-		height: 3px;
-		background: var(--color-black);
-		margin: 3px;
+	.hamburger svg {
+		stroke: var(--color-black);
 	}
 
-	/* logo */
-
-	#logo-white.nav-open {
-		display: inline-block;
+	.hamburger[data-state="closed"] .line {
+		animation: to-open-icon 1s forwards;
 	}
 
-	#logo-black.nav-open {
-		display: none;
+	.hamburger[data-state="opened"] .line {
+		animation: to-close-icon 1s forwards;
+	}
+
+	.hamburger .line.nav-opened {
+		stroke: white;
+	}
+
+	.hamburger .top {
+		--rotation: 45deg;
+		transform-origin: 35px 45px;
+	}
+
+	.hamburger .bottom {
+		--rotation: -45deg;
+		transform-origin: 40px 55px;
+	}
+
+	@keyframes to-close-icon {
+		0% {
+			stroke-dashoffset: 0;
+		}
+		40% {
+			stroke-dashoffset: 79.9;
+		}
+		60% {
+			stroke-dashoffset: 79.9;
+			rotate: var(--rotation);
+		}
+		100% {
+			stroke-dashoffset: 0;
+			rotate: var(--rotation);
+		}
+	}
+
+	@keyframes to-open-icon {
+		0% {
+			stroke-dashoffset: 0;
+			rotate: var(--rotation);
+		}
+		40% {
+			stroke-dashoffset: 79.9;
+			rotate: var(--rotation);
+		}
+		60% {
+			stroke-dashoffset: 79.9;
+		}
+		100% {
+			stroke-dashoffset: 0;
+		}
 	}
 
 	/* nav links */
@@ -116,26 +181,26 @@ nav .nav-content {
 	}
 
 	.nav-links li:nth-child(1) {
-		transition: all 0.5s ease 0.2s;
+		transition: all 0.75s ease 0.1s;
 	}
 
 	.nav-links li:nth-child(2) {
-		transition: all 0.5s ease 0.4s;
+		transition: all 0.75s ease 0.2s;
 	}
 
 	.nav-links li:nth-child(3) {
-		transition: all 0.5s ease 0.6s;
+		transition: all 0.75s ease 0.3s;
 	}
 
 	.nav-links li:nth-child(4) {
-		transition: all 0.5s ease 0.8s;
+		transition: all 0.75s ease 0.4s;
 	}
 
 	li.fade {
 		opacity: 1;
 	}
 
-	/* button */
+	/* contact button */
 
 	nav-links .btn-secondary:hover {
 		background: none;
