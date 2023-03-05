@@ -9,19 +9,22 @@
 		<!-- css -->
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/navigation.css" />
-		<link rel="stylesheet" href="styles/home-landing.css" />
+		<link rel="stylesheet" href="styles/home/landing.css" />
+		<link rel="stylesheet" href="styles/home/about-me.css" />
 
 		<!-- js -->
 		<script src="scripts/app.js" defer></script>
 	</head>
 	<body id="home">
-		<!-- navigation -->
-		<nav>
-			<!-- navbar content -->
-			<div class="max-width nav-content">
+		<!-- header -->
+		<header>
+			<!-- navbar -->
+			<nav class="max-width">
 				<!-- logo -->
-				<img src="images/logo-black.svg" alt="logo" class="logo" id="logo-black" />
-				<img src="images/logo-white.svg" alt="logo" class="logo" id="logo-white" />
+				<a href="#">
+					<img src="images/logo-black.svg" alt="logo" class="logo" id="logo-black" />
+					<img src="images/logo-white.svg" alt="logo" class="logo" id="logo-white" />
+				</a>
 
 				<!-- navigation links -->
 				<ul class="nav-links">
@@ -58,8 +61,8 @@
 						></line>
 					</svg>
 				</button>
-			</div>
-		</nav>
+			</nav>
+		</header>
 
 		<!-- main -->
 		<main class="max-width">
@@ -71,9 +74,9 @@
 					<h1>Full-stack webový vývojář</h1>
 
 					<p>
-						Zdravím, jmenuji se Jan Babák a zabývám se tvorbou webových aplikací.
-						Převážně pracuji s technologiemi JavaScript/TypeScript, Vue.js, Java a
-						Spring Boot.
+						Zdravím, jmenuji se Jan Babák a zabývám se tvorbou webových aplikací. Rád
+						pracuji s technologiemi JavaScript/TypeScript, Vue.js, Java, Spring Boot a
+						Swift.
 					</p>
 
 					<!-- buttons -->
@@ -121,6 +124,146 @@
 					alt="oranžová tečka"
 					class="sparkle orange-dot2"
 				/>
+			</section>
+
+			<!-- about -->
+			<section id="about">
+				<!-- about me -->
+				<article class="about-me">
+					<!-- left column -->
+					<div class="left-column">
+						<img src="images/homepage/aboutme.jpg" alt="vývojář před tabulí" />
+					</div>
+
+					<!-- right column -->
+					<div class="right-column">
+						<h2>O mně</h2>
+						<p>
+							Jmenuji se Jan Babák a studuji webové inženýrství na FIT ČVUT v Praze. S
+							programování jsem začal už na střední škole na volitelném předmětu. Rok
+							po té jsem se účastnil kurzu Introduction to Computer Science na FIT
+							ČVUT, kde jsem se naučil programovat jednoduché hry. Díky tomuto kurzu
+							jsem si uvědomil, že programování mě velice baví a rozhodl jsem se, že
+							musím jít studovat na FIT.
+						</p>
+						<p>
+							Zatím jsem nepracoval v oboru, ale v rámci své bakalářské práce jsem
+							pracoval na projektu z praxe pro firmu Jagu s.r.o. V minulosti jsem měl
+							různé studentské brigády. Rok jsem prováděl průzkum trhu v agentuře
+							Ipsos s.r.o. a další rok jsem pracoval jako asistent prodeje v Decathlon
+							s.r.o.
+						</p>
+						<a href="#" class="btn btn-primary">Stáhnout CV</a>
+					</div>
+				</article>
+
+				<!-- skills -->
+				<article class="skills">
+					<h3>Znalosti</h3>
+
+					<p>
+						Věnuji se jak <strong>frontendu</strong>, tak i <strong>bakcendu</strong>. Z
+						frontendových tenchologií ovládám
+						<strong>JavaScript/TypeScript, HTML, CSS</strong>, framework
+						<strong>Vue.js</strong> a knihovnu komponent <strong>Vuetify</strong>. Mimo
+						to umím programovat nativní mobilní aplikace ve
+						<strong>Swiftu a Swift UI</strong>. Dále umím tvořit wireframy a prototypy v
+						nástroji <strong>Figma</strong>.
+					</p>
+					<p>
+						Ovládám objektově orientované programování (jazyky <strong>Java</strong>,
+						C++). Z backendových technologií umím pracovat ve
+						<strong>SpringBootu</strong>. Dále ovládám <strong>SQL</strong>, příkazovou
+						řádkou (<strong>bash</strong>) a linux, nástroje
+						<strong>Postman, git, GitLab, GitHub</strong> a <strong>Swagger</strong>.
+					</p>
+
+					<!-- icons -->
+					<div class="icons">
+						<!-- Java -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>language-java</title>
+							<path
+								d="M16.5,6.08C16.5,6.08 9.66,7.79 12.94,11.56C13.91,12.67 12.69,13.67 12.69,13.67C12.69,13.67 15.14,12.42 14,10.82C12.94,9.35 12.14,8.62 16.5,6.08M12.03,7.28C16.08,4.08 14,2 14,2C14.84,5.3 11.04,6.3 9.67,8.36C8.73,9.76 10.13,11.27 12,13C11.29,11.3 8.78,9.84 12.03,7.28M9.37,17.47C6.29,18.33 11.25,20.1 15.16,18.43C14.78,18.28 14.41,18.1 14.06,17.89C12.7,18.2 11.3,18.26 9.92,18.07C8.61,17.91 9.37,17.47 9.37,17.47M14.69,15.79C12.94,16.17 11.13,16.26 9.35,16.05C8.04,15.92 8.9,15.28 8.9,15.28C5.5,16.41 10.78,17.68 15.5,16.3C15.21,16.19 14.93,16 14.69,15.79M18.11,19.09C18.11,19.09 18.68,19.56 17.5,19.92C15.22,20.6 8.07,20.81 6.09,19.95C5.38,19.64 6.72,19.21 7.14,19.12C7.37,19.06 7.6,19.04 7.83,19.04C7.04,18.5 2.7,20.14 5.64,20.6C13.61,21.9 20.18,20 18.11,19.09M15.37,14.23C15.66,14.04 15.97,13.88 16.29,13.74C16.29,13.74 14.78,14 13.27,14.14C11.67,14.3 10.06,14.32 8.46,14.2C6.11,13.89 9.75,13 9.75,13C8.65,13 7.57,13.26 6.59,13.75C4.54,14.75 11.69,15.2 15.37,14.23M16.27,16.65C16.25,16.69 16.23,16.72 16.19,16.75C21.2,15.44 19.36,12.11 16.96,12.94C16.83,13 16.72,13.08 16.65,13.19C16.79,13.14 16.93,13.1 17.08,13.07C18.28,12.83 20,14.7 16.27,16.65M16.4,21.26C13.39,21.78 10.31,21.82 7.28,21.4C7.28,21.4 7.74,21.78 10.09,21.93C13.69,22.16 19.22,21.8 19.35,20.1C19.38,20.11 19.12,20.75 16.4,21.26Z"
+							/>
+						</svg>
+
+						<!-- Spring Boot -->
+						<svg
+							style="color: #f3da35"
+							role="img"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<title>Spring Boot</title>
+							<path
+								d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z"
+							></path>
+						</svg>
+
+						<!-- TypeScript -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>language-typescript</title>
+							<path
+								d="M3,3H21V21H3V3M13.71,17.86C14.21,18.84 15.22,19.59 16.8,19.59C18.4,19.59 19.6,18.76 19.6,17.23C19.6,15.82 18.79,15.19 17.35,14.57L16.93,14.39C16.2,14.08 15.89,13.87 15.89,13.37C15.89,12.96 16.2,12.64 16.7,12.64C17.18,12.64 17.5,12.85 17.79,13.37L19.1,12.5C18.55,11.54 17.77,11.17 16.7,11.17C15.19,11.17 14.22,12.13 14.22,13.4C14.22,14.78 15.03,15.43 16.25,15.95L16.67,16.13C17.45,16.47 17.91,16.68 17.91,17.26C17.91,17.74 17.46,18.09 16.76,18.09C15.93,18.09 15.45,17.66 15.09,17.06L13.71,17.86M13,11.25H8V12.75H9.5V20H11.25V12.75H13V11.25Z"
+							/>
+						</svg>
+
+						<!-- Swift -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>language-swift</title>
+							<path
+								d="M17.09,19.72C14.73,21.08 11.5,21.22 8.23,19.82C5.59,18.7 3.4,16.74 2,14.5C2.67,15.05 3.46,15.5 4.3,15.9C7.67,17.47 11.03,17.36 13.4,15.9C10.03,13.31 7.16,9.94 5.03,7.19C4.58,6.74 4.25,6.18 3.91,5.68C12.19,11.73 11.83,13.27 6.32,4.67C11.21,9.61 15.75,12.41 15.75,12.41C15.91,12.5 16,12.57 16.11,12.63C16.21,12.38 16.3,12.12 16.37,11.85C17.16,9 16.26,5.73 14.29,3.04C18.84,5.79 21.54,10.95 20.41,15.28C20.38,15.39 20.35,15.5 20.36,15.67C22.6,18.5 22,21.45 21.71,20.89C20.5,18.5 18.23,19.24 17.09,19.72V19.72Z"
+							/>
+						</svg>
+
+						<!-- Vue.js -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>vuejs</title>
+							<path
+								d="M2,3H5.5L12,15L18.5,3H22L12,21L2,3M6.5,3H9.5L12,7.58L14.5,3H17.5L12,13.08L6.5,3Z"
+							/>
+						</svg>
+
+						<!-- git -->
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<title>git</title>
+							<path
+								d="M2.6,10.59L8.38,4.8L10.07,6.5C9.83,7.35 10.22,8.28 11,8.73V14.27C10.4,14.61 10,15.26 10,16A2,2 0 0,0 12,18A2,2 0 0,0 14,16C14,15.26 13.6,14.61 13,14.27V9.41L15.07,11.5C15,11.65 15,11.82 15,12A2,2 0 0,0 17,14A2,2 0 0,0 19,12A2,2 0 0,0 17,10C16.82,10 16.65,10 16.5,10.07L13.93,7.5C14.19,6.57 13.71,5.55 12.78,5.16C12.35,5 11.9,4.96 11.5,5.07L9.8,3.38L10.59,2.6C11.37,1.81 12.63,1.81 13.41,2.6L21.4,10.59C22.19,11.37 22.19,12.63 21.4,13.41L13.41,21.4C12.63,22.19 11.37,22.19 10.59,21.4L2.6,13.41C1.81,12.63 1.81,11.37 2.6,10.59Z"
+							/>
+						</svg>
+					</div>
+				</article>
+
+				<!-- education -->
+				<article class="education">
+					<!-- left column -->
+					<div class="left-column">
+						<h3>Vzdělání a certifikáty</h3>
+						<ul>
+							<li>
+								Bc. na
+								<a
+									href="https://www.google.com/search?q=fit+cvut&rlz=1C5CHFA_enCZ991CZ991&oq=fit+cvut&aqs=chrome.0.0i355i512j46i512j0i512l8.1398j0j7&sourceid=chrome&ie=UTF-8#:~:text=FIT%20%C4%8CVUT%3A%20Fakulta,fit.cvut.cz"
+									>Fakultě infomačních technologií ČVUT v Praze</a
+								>
+								- specializace Softwarové inženýrství se zaměřením na webové
+								inženýrství (červený diplom)
+							</li>
+							<li>
+								<a href="https://www.cambridgeenglish.org/exams-and-tests/first/"
+									>FCE</a
+								>
+								- angličtina úroveň B2
+							</li>
+						</ul>
+					</div>
+
+					<!-- right column -->
+					<div class="right-column">
+						<img src="images/homepage/education.svg" alt="" />
+					</div>
+				</article>
 			</section>
 		</main>
 	</body>

@@ -1,11 +1,11 @@
 /* nav */
 
-nav {
+header {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
-nav .nav-content {
+header nav {
 	display: flex;
 	align-items: center;
 	height: 100%;

@@ -26,15 +26,17 @@
 	--font-h1: normal bold 5.5rem / normal "Roboto", sans-serif;
 	--font-h2: normal bold 4.125rem / normal "Roboto", sans-serif;
 	--font-h3: normal bold 3.125rem / normal "Roboto", sans-serif;
+	--font-h4: normal bold 2.3125rem / normal "Roboto", sans-serif;
+	--font-h5: normal bold 1.755rem / normal "Roboto", sans-serif;
 	--font-paragraph: normal normal 21px / 37px "Poppins", sans-serif;
 	--font-small: normal normal 18px / normal "Poppins", sans-serif;
 
 	/* border radius */
-	--radius-small: 5px;
+	--radius-small: 6px;
 }
 
 body {
-	font-family: sans-serif;
+	font-family: "Poppins", sans-serif;
 	color: var(--color-black);
 }
 
@@ -48,9 +50,42 @@ body {
 
 /* general */
 
-p {
+h1 {
+	font: var(--font-h1);
+}
+
+h2 {
+	font: var(--font-h2);
+	margin-bottom: 1.5rem;
+}
+
+h3 {
+	font: var(--font-h3);
+	margin-bottom: 1.5rem;
+}
+
+p,
+li {
 	font: var(--font-paragraph);
 	color: var(--color-black75);
+	margin-bottom: 1.5rem;
+}
+
+section {
+	margin: 10.5rem 0;
+}
+
+article {
+	margin: 8rem 0;
+}
+
+a {
+	color: var(--color-secondary);
+	font-weight: 500;
+}
+
+a:visited {
+	color: var(--color-primary);
 }
 
 /* buttons */
@@ -73,7 +108,8 @@ p {
 	background-color: var(--color-primary-light);
 }
 
-.btn-primary {
+.btn-primary,
+a:visited.btn-primary {
 	color: white;
 	background: var(--color-primary);
 	transition: all 0.3s ease;
@@ -84,24 +120,74 @@ p {
 	border-color: var(--color-primary-washed);
 }
 
-@media only screen and (max-width: 850px) {
-	p {
+@media only screen and (max-width: 1340px) {
+	h1 {
+		font: var(--font-h2);
+	}
+
+	h2 {
+		font: var(--font-h3);
+	}
+
+	h3 {
+		font: var(--font-h4);
+	}
+
+	p,
+	li {
 		font-size: 19px;
+	}
+
+	section {
+		margin: 8rem 0;
+	}
+
+	article {
+		margin: 6rem 0;
 	}
 }
 
-@media only screen and (max-width: 570px) {
-	.max-width {
-		padding-left: 1rem;
-		padding-right: 1rem;
+@media only screen and (max-width: 750px) {
+	h1 {
+		font: var(--font-h3);
+	}
+
+	h2 {
+		font: var(--font-h4);
+	}
+
+	h3 {
+		font: var(--font-h5);
+	}
+
+	section {
+		margin: 6rem 0;
+	}
+
+	article {
+		margin: 4.5rem 0;
 	}
 
 	.btn {
 		padding: 0.25rem 0;
 	}
+}
 
-	p {
+@media only screen and (max-width: 570px) {
+	h2,
+	h3 {
+		margin-bottom: 1rem;
+	}
+
+	.max-width {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	p,
+	li {
 		font-size: 1rem;
 		line-height: 1.75rem;
+		margin-bottom: 1rem;
 	}
 }
