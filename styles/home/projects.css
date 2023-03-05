@@ -1,0 +1,28 @@
+#projects article {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#projects img.mobile {
+	width: 60%;
+	align-self: center;
+}
+
+#projects img.desktop {
+	width: 100%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	border-radius: 0.4rem;
+}
+
+@media only screen and (max-width: 750px) {
+	#projects img.mobile {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#projects img.mobile {
+		width: 90%;
+	}
+}
