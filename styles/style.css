@@ -92,7 +92,7 @@ a:visited {
 
 .btn {
 	border: 3px solid var(--color-primary);
-	padding: 0.5rem 3rem;
+	padding: 0.25rem 3rem;
 	border-radius: var(--radius-small);
 	text-decoration: none;
 	font: var(--font-paragraph);
@@ -166,10 +166,6 @@ a:visited.btn-primary {
 
 	article {
 		margin: 4.5rem 0;
-	}
-
-	.btn {
-		padding: 0.25rem 0;
 	}
 }
 
