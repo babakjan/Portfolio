@@ -12,10 +12,7 @@ footer a {
 
 footer .content,
 footer .rights,
-footer .navigation,
-.contact-icons,
-.contacts,
-.contacts .email {
+footer .navigation {
 	display: flex;
 	align-items: center;
 }
@@ -58,30 +55,8 @@ footer .navigation a:hover {
 	text-decoration: underline;
 }
 
-svg.icon {
-	height: 1.5rem;
-}
-
 footer a {
 	padding: 0;
-}
-
-.contact-icons {
-	justify-content: center;
-	gap: 1rem;
-}
-.contact-icons a {
-	text-decoration: none;
-}
-
-.contacts {
-	justify-content: flex-end;
-	gap: 2.5rem;
-}
-
-.contacts .email {
-	justify-content: center;
-	gap: 0.5rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -94,18 +69,13 @@ footer a {
 		order: 0;
 	}
 
-	.contacts {
-		order: 1;
-	}
-
 	footer .rights {
 		order: 3;
 	}
 }
 
 @media screen and (max-width: 500px) {
-	footer .navigation,
-	.contacts {
+	footer .navigation {
 		flex-direction: column;
 		gap: 1.5rem;
 	}

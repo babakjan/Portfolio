@@ -1,12 +1,14 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+const navbarLinks = document.querySelectorAll(".nav-links li");
 const logoWhite = document.querySelector("#logo-white");
 const logoBlack = document.querySelector("#logo-black");
 const hamburgerLines = document.querySelectorAll(".hamburger .line");
 
-//hamburger menu click
-hamburger.addEventListener("click", () => {
+/**
+ * toggle hamburger menu
+ */
+const hamburgerOnClick = () => {
 	toggleClassWithDelay(logoWhite, "nav-opened", 100, 650);
 	toggleClassWithDelay(logoBlack, "nav-opened", 100, 650);
 	hamburgerLines.forEach((line) => toggleClassWithDelay(line, "nav-opened", 0, 750));
@@ -14,7 +16,7 @@ hamburger.addEventListener("click", () => {
 
 	//when page is loaded, there aren't state attribute - animation don't fire on page load,
 	//when button is click add or remove the state
-	links.forEach((link) => link.classList.toggle("fade"));
+	navbarLinks.forEach((link) => link.classList.toggle("fade"));
 	const currentState = hamburger.getAttribute("data-state");
 	if (!currentState || currentState === "closed") {
 		hamburger.setAttribute("data-state", "opened");
@@ -23,6 +25,19 @@ hamburger.addEventListener("click", () => {
 		hamburger.setAttribute("data-state", "closed");
 		hamburger.setAttribute("aria-expanded", "false");
 	}
+};
+
+//hamburger menu click
+hamburger.addEventListener("click", hamburgerOnClick);
+
+//navbar links close hamburger menu, when they're clicked and and when the menu is opened
+navbarLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		const hamburgerMenuOpened = hamburger.getAttribute("data-state");
+		if (hamburgerMenuOpened && hamburgerMenuOpened === "opened") {
+			hamburgerOnClick();
+		}
+	});
 });
 
 /**

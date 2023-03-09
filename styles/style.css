@@ -135,6 +135,39 @@ a.btn-primary {
 	color: white;
 }
 
+/* contact icons */
+
+.contacts {
+	justify-content: flex-end;
+	gap: 2.5rem;
+}
+
+svg.icon {
+	height: 1.5rem;
+}
+
+.contact-icons {
+	justify-content: center;
+	gap: 1rem;
+}
+.contact-icons a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+.contact-icons,
+.contacts .email,
+.contacts {
+	display: flex;
+	align-items: center;
+}
+
+.contacts .email {
+	justify-content: center;
+	gap: 0.5rem;
+}
+
 @media screen and (max-width: 1340px) {
 	:root {
 		--font-h1: normal bold 3.95rem / normal "Roboto", sans-serif;
@@ -150,6 +183,12 @@ a.btn-primary {
 
 	article {
 		margin: 6rem 0;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.contacts {
+		order: 1;
 	}
 }
 
@@ -189,5 +228,12 @@ a.btn-primary {
 	p,
 	li {
 		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contacts {
+		flex-direction: column;
+		gap: 1.5rem;
 	}
 }

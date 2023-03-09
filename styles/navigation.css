@@ -33,22 +33,30 @@ header nav {
 	z-index: 3;
 }
 
-.nav-links li a {
+.nav-links li {
+	margin-bottom: 0;
+}
+
+.nav-links li a.link {
 	text-decoration: none;
 	font: var(--font-small);
 	color: var(--color-black);
 	margin-left: 2.5rem;
 }
 
-.nav-links li a:hover {
+.nav-links li.contact-icons {
+	margin-left: 2.5rem;
+}
+
+.nav-links li a.link:hover {
 	text-decoration: underline;
 }
 
-.nav-links li a.active {
+.nav-links li a.link.active {
 	font-weight: bold;
 }
 
-.nav-links li a.active:hover {
+.nav-links li a.link.active:hover {
 	text-decoration: none;
 }
 
@@ -56,7 +64,7 @@ header nav {
 	padding: 0.4rem 2rem;
 }
 
-.nav-links li a.btn-secondary:hover {
+.nav-links li a.link.btn-secondary:hover {
 	text-decoration: none;
 }
 
@@ -111,6 +119,12 @@ header nav {
 
 	.hamburger .line.nav-opened {
 		stroke: white;
+	}
+
+	.nav-links li.contact-icons svg {
+		fill: white;
+		height: 2rem;
+		margin: 0.25rem;
 	}
 
 	.hamburger .top {
@@ -192,7 +206,7 @@ header nav {
 		transform: translateX(-1.25rem);
 	}
 
-	.nav-links li a {
+	.nav-links li a.link {
 		font-size: 1.5rem;
 		color: white;
 	}
@@ -211,6 +225,10 @@ header nav {
 
 	.nav-links li:nth-child(4) {
 		transition: all 0.75s ease 0.4s;
+	}
+
+	.nav-links li:nth-child(5) {
+		transition: all 0.75s ease 0.5s;
 	}
 
 	li.fade {

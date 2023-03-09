@@ -2,6 +2,7 @@
 
 .landing {
 	height: calc(100vh - 8rem);
+	max-height: 55rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
