@@ -72,6 +72,10 @@ li {
 	margin-bottom: 1.5rem;
 }
 
+strong {
+	font-weight: 600;
+}
+
 section {
 	margin: 10.5rem 0;
 }
@@ -81,12 +85,12 @@ article {
 }
 
 a {
-	color: var(--color-secondary);
+	color: var(--color-primary);
 	font-weight: 500;
 }
 
 a:visited {
-	color: var(--color-primary);
+	color: var(--color-secondary);
 }
 
 /* buttons */
@@ -100,7 +104,8 @@ a:visited {
 }
 
 .btn-secondary,
-.nav-links li a.btn-secondary {
+.nav-links li,
+a.btn-secondary {
 	color: var(--color-primary);
 	transition: all 0.3s ease;
 }

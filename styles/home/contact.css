@@ -11,6 +11,20 @@
 
 #contact .left-column {
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact .left-column .contacts {
+	margin-bottom: 2rem;
+	align-self: flex-start;
+	justify-content: space-between;
+	width: 100%;
+	order: 0;
+}
+
+#contact .left-column a {
+	color: var(--color-black);
 }
 
 #contact .left-column form {
@@ -71,5 +85,11 @@
 
 	#contact .right-column {
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#contact .left-column .contacts {
+		align-items: flex-start;
 	}
 }

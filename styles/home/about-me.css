@@ -31,12 +31,13 @@
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 5rem;
+	gap: 6rem;
+	margin-top: 3rem;
 }
 
 .skills .icons svg {
 	fill: var(--color-secondary);
-	height: 8rem;
+	height: 6rem;
 }
 
 /* education */

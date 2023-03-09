@@ -13,9 +13,9 @@ footer a {
 footer .content,
 footer .rights,
 footer .navigation,
-footer .icons,
-footer .contact,
-footer .email {
+.contact-icons,
+.contacts,
+.contacts .email {
 	display: flex;
 	align-items: center;
 }
@@ -26,6 +26,7 @@ footer .content {
 
 footer .rights {
 	flex-direction: column;
+	align-items: flex-start;
 }
 
 footer .navigation {
@@ -57,7 +58,7 @@ footer .navigation a:hover {
 	text-decoration: underline;
 }
 
-footer svg.icon {
+svg.icon {
 	height: 1.5rem;
 }
 
@@ -65,17 +66,20 @@ footer a {
 	padding: 0;
 }
 
-footer .icons {
+.contact-icons {
 	justify-content: center;
 	gap: 1rem;
 }
+.contact-icons a {
+	text-decoration: none;
+}
 
-footer .contact {
+.contacts {
 	justify-content: flex-end;
 	gap: 2.5rem;
 }
 
-footer .email {
+.contacts .email {
 	justify-content: center;
 	gap: 0.5rem;
 }
@@ -90,7 +94,7 @@ footer .email {
 		order: 0;
 	}
 
-	footer .contact {
+	.contacts {
 		order: 1;
 	}
 
@@ -101,9 +105,13 @@ footer .email {
 
 @media screen and (max-width: 500px) {
 	footer .navigation,
-	footer .contact {
+	.contacts {
 		flex-direction: column;
 		gap: 1.5rem;
+	}
+
+	footer .rights {
+		align-items: center;
 	}
 
 	footer .rights span {

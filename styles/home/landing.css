@@ -1,7 +1,7 @@
 /* landing */
 
 .landing {
-	height: calc(100vh - 6rem);
+	height: calc(100vh - 8rem);
 	display: flex;
 	justify-content: center;
 	align-items: center;
