@@ -6,6 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 0;
+	position: relative;
 }
 
 /* left column */
@@ -56,17 +57,17 @@
 
 .sparkle.purple-dot-big {
 	left: 30%;
-	top: 12%;
+	top: 0%;
 }
 
 .sparkle.purple-dot-small {
-	left: 44%;
-	top: 70%;
+	left: 45%;
+	top: 65%;
 }
 
 .sparkle.orange-dot1 {
-	left: 10%;
-	top: 17%;
+	left: 5%;
+	top: 8%;
 }
 
 .sparkle.orange-dot2 {
@@ -76,22 +77,22 @@
 
 .sparkle.orange-triangle {
 	left: 40%;
-	top: 28%;
+	top: 18%;
 }
 
-@media only screen and (max-width: 1340px) {
-	s .sparkle.orange-triangle {
-		top: 37%;
-	}
-}
-
-@media only screen and (max-width: 1190px) {
+@media screen and (max-width: 1340px) {
 	.sparkle.orange-triangle {
-		top: 23%;
+		top: 32%;
 	}
 }
 
-@media only screen and (max-width: 1065px) {
+@media screen and (max-width: 1175px) {
+	.sparkle.orange-triangle {
+		top: 15%;
+	}
+}
+
+@media screen and (max-width: 1065px) {
 	.landing {
 		flex-direction: column;
 		height: auto;
@@ -143,33 +144,33 @@
 	/* sparkles */
 
 	.sparkle.purple-dot-big {
-		left: 75%;
-		top: 32%;
+		left: 15%;
+		top: 25%;
 	}
 
 	.sparkle.purple-dot-small {
-		left: 15%;
-		top: 40%;
+		left: 85%;
+		top: 22%;
 	}
 
 	.sparkle.orange-dot2 {
-		left: 84%;
+		left: 80%;
 		top: 45%;
 	}
 
 	.sparkle.orange-triangle {
 		left: 75%;
-		top: 18%;
+		top: 5%;
 	}
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
 	.landing .right-column img {
 		height: 23rem;
 	}
 }
 
-@media only screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
 	.landing .right-column img {
 		height: 21rem;
 	}
@@ -180,24 +181,29 @@
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
 	.landing .left-column .btns {
 		flex-direction: column;
 		gap: 1rem;
 		text-align: center;
 	}
 
-	.landing .left-column h1 {
-		font: var(--font-h3);
-	}
-
 	.landing .left-column .arrow {
 		left: 22%;
 		margin-left: auto;
 	}
+
+	.sparkle.orange-triangle {
+		left: 90%;
+	}
+
+	.sparkle.orange-dot2 {
+		top: 35%;
+		left: 90%;
+	}
 }
 
-@media only screen and (max-width: 570px) {
+@media screen and (max-width: 570px) {
 	.landing {
 		max-height: none;
 	}
@@ -214,5 +220,16 @@
 	.landing .left-column .arrow {
 		left: 12%;
 		margin-left: auto;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.sparkle.purple-dot-big {
+		top: 10%;
+		left: 8%;
+	}
+
+	.sparkle.orange-dot1 {
+		top: 25%;
 	}
 }

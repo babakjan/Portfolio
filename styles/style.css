@@ -23,13 +23,14 @@
 
 	/* typography */
 	/* font: font-style weight size/line-height font-family */
-	--font-h1: normal bold 5.5rem / normal "Roboto", sans-serif;
-	--font-h2: normal bold 4.125rem / normal "Roboto", sans-serif;
-	--font-h3: normal bold 3.125rem / normal "Roboto", sans-serif;
-	--font-h4: normal bold 2.3125rem / normal "Roboto", sans-serif;
-	--font-h5: normal bold 1.755rem / normal "Roboto", sans-serif;
-	--font-paragraph: normal 300 20px / 37px "Poppins", sans-serif;
-	--font-small: normal normal 18px / normal "Poppins", sans-serif;
+	--font-h1: normal bold 5.26rem / normal "Roboto", sans-serif;
+	--font-h2: normal bold 3.95rem / normal "Roboto", sans-serif;
+	--font-h3: normal bold 2.96rem / normal "Roboto", sans-serif;
+	--font-h4: normal bold 2.22rem / normal "Roboto", sans-serif;
+	--font-h5: normal bold 1.67rem / normal "Roboto", sans-serif;
+	--font-h6: normal bold 1.25rem / normal "Roboto", sans-serif;
+	--font-paragraph: normal 300 1.25rem / 2.25rem "Poppins", sans-serif;
+	--font-small: normal normal 1.125rem / normal "Poppins", sans-serif;
 
 	/* border radius */
 	--radius-small: 6px;
@@ -120,22 +121,13 @@ a:visited.btn-primary {
 	border-color: var(--color-primary-washed);
 }
 
-@media only screen and (max-width: 1340px) {
-	h1 {
-		font: var(--font-h2);
-	}
-
-	h2 {
-		font: var(--font-h3);
-	}
-
-	h3 {
-		font: var(--font-h4);
-	}
-
-	p,
-	li {
-		font-size: 19px;
+@media screen and (max-width: 1340px) {
+	:root {
+		--font-h1: normal bold 3.95rem / normal "Roboto", sans-serif;
+		--font-h2: normal bold 2.96rem / normal "Roboto", sans-serif;
+		--font-h3: normal bold 2.22rem / normal "Roboto", sans-serif;
+		--font-h4: normal bold 1.67rem / normal "Roboto", sans-serif;
+		--font-h5: normal bold 1.25rem / normal "Roboto", sans-serif;
 	}
 
 	section {
@@ -147,17 +139,12 @@ a:visited.btn-primary {
 	}
 }
 
-@media only screen and (max-width: 750px) {
-	h1 {
-		font: var(--font-h3);
-	}
-
-	h2 {
-		font: var(--font-h4);
-	}
-
-	h3 {
-		font: var(--font-h5);
+@media screen and (max-width: 750px) {
+	:root {
+		--font-h1: normal bold 2.96rem / normal "Roboto", sans-serif;
+		--font-h2: normal bold 2.22rem / normal "Roboto", sans-serif;
+		--font-h3: normal bold 1.67rem / normal "Roboto", sans-serif;
+		--font-h4: normal bold 1.25rem / normal "Roboto", sans-serif;
 	}
 
 	section {
@@ -169,7 +156,12 @@ a:visited.btn-primary {
 	}
 }
 
-@media only screen and (max-width: 570px) {
+@media screen and (max-width: 570px) {
+	:root {
+		--font-paragraph: normal 300 1rem / 1.75rem "Poppins", sans-serif;
+		--font-small: normal normal 1rem / normal "Poppins", sans-serif;
+	}
+
 	h2,
 	h3 {
 		margin-bottom: 1rem;
@@ -182,8 +174,6 @@ a:visited.btn-primary {
 
 	p,
 	li {
-		font-size: 1rem;
-		line-height: 1.75rem;
 		margin-bottom: 1rem;
 	}
 }

@@ -54,7 +54,7 @@
 	height: 21rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.about-me {
 		flex-direction: column;
 		align-items: center;
@@ -84,7 +84,7 @@
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media screen and (max-width: 950px) {
 	.about-me .left-column img {
 		width: 70%;
 	}
@@ -99,7 +99,7 @@
 	}
 }
 
-@media only screen and (max-width: 750px) {
+@media screen and (max-width: 750px) {
 	.about-me {
 		gap: 3rem;
 	}
@@ -126,7 +126,7 @@
 	}
 }
 
-@media only screen and (max-width: 570px) {
+@media screen and (max-width: 570px) {
 	.skills .icons {
 		gap: 2rem;
 	}

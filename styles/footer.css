@@ -80,7 +80,7 @@ footer .email {
 	gap: 0.5rem;
 }
 
-@media only screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
 	footer .content {
 		flex-direction: column;
 		gap: 1.5rem;
@@ -99,10 +99,14 @@ footer .email {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
 	footer .navigation,
 	footer .contact {
 		flex-direction: column;
 		gap: 1.5rem;
+	}
+
+	footer .rights span {
+		text-align: center;
 	}
 }
