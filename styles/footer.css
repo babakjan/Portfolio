@@ -40,10 +40,7 @@ footer .navigation a {
 	text-decoration: none;
 	color: var(--color-black);
 	font: var(--font-small);
-}
-
-footer .navigation a.active {
-	font-weight: bold;
+	transition: all 0.3s ease;
 }
 
 footer .navigation a.active:hover {
@@ -52,7 +49,7 @@ footer .navigation a.active:hover {
 }
 
 footer .navigation a:hover {
-	text-decoration: underline;
+	color: var(--color-secondary);
 }
 
 footer a {

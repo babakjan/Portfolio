@@ -91,8 +91,10 @@ article {
 a {
 	color: var(--color-primary);
 	font-weight: 500;
+	transition: all 0.3s ease;
 }
 
+a:hover,
 a:visited {
 	color: var(--color-secondary);
 }
@@ -144,6 +146,11 @@ a.btn-primary {
 
 svg.icon {
 	height: 1.5rem;
+	transition: all 0.3s ease;
+}
+
+a svg.icon:hover {
+	fill: var(--color-secondary);
 }
 
 .contact-icons {
