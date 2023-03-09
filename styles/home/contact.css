@@ -31,7 +31,7 @@
 	background-color: var(--color-ternary);
 	border: none;
 	border-radius: var(--radius-small);
-	font: var(--font-smalls);
+	font: var(--font-small);
 	color: var(--color-black75);
 	padding: 0.5rem;
 }
