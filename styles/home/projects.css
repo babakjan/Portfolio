@@ -4,17 +4,29 @@
 	align-items: flex-start;
 }
 
+#projects a.screenshot {
+	align-self: center;
+	max-width: 65rem;
+	display: flex;
+	justify-content: center;
+}
+
+#projects a img {
+	transition: all 0.3s ease;
+}
+
+#projects img:hover {
+	transform: scale(1.01);
+}
+
 #projects img.mobile {
 	width: 60%;
-	align-self: center;
 }
 
 #projects img.desktop {
 	width: 100%;
-	max-width: 65rem;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 	border-radius: 0.4rem;
-	align-self: center;
 }
 
 @media screen and (max-width: 750px) {

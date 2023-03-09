@@ -25,6 +25,8 @@
 
 #contact .left-column a {
 	color: var(--color-black);
+	font: var(--font-small);
+	font-weight: 500;
 }
 
 #contact .left-column form {
