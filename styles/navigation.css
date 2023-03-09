@@ -2,7 +2,7 @@
 
 header {
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 header nav {
@@ -16,6 +16,12 @@ header nav {
 .logo {
 	height: 2rem;
 	z-index: 10;
+	position: sticky;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
 }
 
 #logo-white {
@@ -76,6 +82,16 @@ header nav {
 /* mobile */
 @media screen and (max-width: 768px) {
 	/* nav */
+
+	header {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+		background: white;
+		padding-top: 1.5rem;
+		padding-bottom: 0.5rem;
+	}
 
 	nav {
 		position: relative;
