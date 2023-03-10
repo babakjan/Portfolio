@@ -5,6 +5,12 @@ const logoWhite = document.querySelector("#logo-white");
 const logoBlack = document.querySelector("#logo-black");
 const hamburgerLines = document.querySelectorAll(".hamburger .line");
 
+window.addEventListener("load", () => {
+	if (window.innerWidth > 750) {
+		navbarLinks.forEach((link) => link.classList.toggle("fade-desktop"));
+	}
+});
+
 /**
  * toggle hamburger menu
  */
@@ -25,7 +31,7 @@ function hamburgerOnClick() {
 		hamburger.setAttribute("data-state", "closed");
 		hamburger.setAttribute("aria-expanded", "false");
 	}
-};
+}
 
 //hamburger menu click
 hamburger.addEventListener("click", hamburgerOnClick);

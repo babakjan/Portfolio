@@ -37,8 +37,6 @@ window.addEventListener("load", setScrollUpBtnPosition);
 window.addEventListener("resize", setScrollUpBtnPosition);
 
 function setScrollUpBtnPosition() {
-	console.log(window.innerWidth);
-	console.log(aboutMeSection.getBoundingClientRect());
 	scrollUpBtn.style.right = `calc(${
 		window.innerWidth - aboutMeSection.getBoundingClientRect().right
 	}px)`;

@@ -22,6 +22,7 @@
 		<!-- js -->
 		<script src="scripts/hamburgerMenu.js" defer></script>
 		<script src="scripts/scrollAnimations.js" defer></script>
+		<script src="scripts/fadeAnimations.js" defer></script>
 	</head>
 	<body id="home">
 		<!-- header -->
@@ -130,23 +131,23 @@
 				<!-- left column -->
 				<div class="left-column">
 					<!-- proposition -->
-					<h1>Full-stack webový vývojář</h1>
+					<h1 class="fade-first">Full-stack webový vývojář</h1>
 
-					<p>
+					<p class="fade-second">
 						Zdravím, jmenuji se Jan Babák a zabývám se tvorbou webových aplikací. Rád
 						pracuji s technologiemi JavaScript/TypeScript, Vue.js, Java, Spring Boot a
 						Swift.
 					</p>
 
 					<!-- buttons -->
-					<div class="btns">
+					<div class="btns fade-third">
 						<a href="#contact" class="btn btn-secondary">Kontakt</a>
 						<a href="#projects" class="btn btn-primary">Projekty</a>
 					</div>
 					<img
 						src="images/homepage/arrow.svg"
 						alt="šipka na tlačítko projekty"
-						class="arrow"
+						class="arrow fade-forth"
 					/>
 				</div>
 
@@ -157,34 +158,38 @@
 
 				<!-- right column -->
 				<div class="right-column">
-					<img src="images/homepage/landing.jpg" alt="Programátor u počítače." />
+					<img
+						src="images/homepage/landing.jpg"
+						alt="Programátor u počítače."
+						class="focal-point fade-fifth"
+					/>
 				</div>
 
 				<!-- sparkles -->
 				<img
 					src="images/homepage/sparkles/purple-dot-big.svg"
 					alt="fialová tečka"
-					class="sparkle purple-dot-big"
+					class="sparkle purple-dot-big fade-sixth"
 				/>
 				<img
 					src="images/homepage/sparkles/purple-dot-small.svg"
 					alt="fialová tečka"
-					class="sparkle purple-dot-small"
+					class="sparkle purple-dot-small fade-sixth"
 				/>
 				<img
 					src="images/homepage/sparkles/orange-dot.svg"
 					alt="oranžová tečka"
-					class="sparkle orange-dot1"
+					class="sparkle orange-dot1 fade-sixth"
 				/>
 				<img
 					src="images/homepage/sparkles/orange-triangle.svg"
 					alt="oranžový trojúhelník"
-					class="sparkle orange-triangle"
+					class="sparkle orange-triangle fade-sixth"
 				/>
 				<img
 					src="images/homepage/sparkles/orange-dot.svg"
 					alt="oranžová tečka"
-					class="sparkle orange-dot2"
+					class="sparkle orange-dot2 fade-sixth"
 				/>
 			</section>
 
@@ -533,7 +538,7 @@
 			<div class="content max-width">
 				<!-- rights -->
 				<div class="rights">
-					<span> &#169; 2022 Jan Babák. All rights reserved. </span>
+					<span> &#169; 2023 Design & built by Jan Babák.</span>
 					<span>
 						Děkuji <a href="https://www.vecteezy.com">Vecteezy</a> za ilustrace.
 					</span>

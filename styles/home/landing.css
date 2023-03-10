@@ -27,6 +27,42 @@
 	margin-left: 8rem;
 }
 
+.landing h1,
+.landing p,
+.landing .btns,
+.landing .arrow,
+.landing .focal-point,
+.landing .sparkle {
+	opacity: 0;
+}
+
+.landing .fade {
+	opacity: 1;
+}
+
+.landing .fade-first {
+	transition: opacity 0.75s ease 0.9s;
+}
+
+.landing .fade-second {
+	transition: opacity 0.75s ease 1.05s;
+}
+
+.landing .fade-third {
+	transition: opacity 0.75s ease 1.2s;
+}
+
+.landing .fade-forth {
+	transition: opacity 0.75s ease 1.35s;
+}
+
+.landing .fade-fifth {
+	transition: opacity 0.75s ease 1.5s;
+}
+
+.landing .fade-sixth {
+	transition: opacity 0.75s ease 1.65s;
+}
 /* right column */
 
 .landing .right-column {
@@ -191,6 +227,30 @@
 	.landing .left-column .arrow {
 		left: 22%;
 		margin-left: auto;
+	}
+
+	.landing .fade-fifth {
+		transition: opacity 0.75s ease 0s;
+	}
+
+	.landing .fade-first {
+		transition: opacity 0.75s ease 0.25s;
+	}
+
+	.landing .fade-second {
+		transition: opacity 0.75s ease 0.4s;
+	}
+
+	.landing .fade-third {
+		transition: opacity 0.75s ease 0.55s;
+	}
+
+	.landing .fade-forth {
+		transition: opacity 0.75s ease 0.7s;
+	}
+
+	.landing .fade-sixth {
+		transition: opacity 0.75s ease 0.85s;
 	}
 
 	.sparkle.orange-triangle {

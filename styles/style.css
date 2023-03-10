@@ -197,7 +197,7 @@ a svg.icon:hover {
 	height: 4rem;
 	border-radius: var(--radius-big);
 	width: 4rem;
-	z-index: 10;
+	z-index: 1;
 	background: var(--color-primary);
 	box-shadow: var(--shadow);
 	cursor: pointer;
