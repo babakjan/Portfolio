@@ -258,6 +258,11 @@ li.reveal-desktop {
 	.nav-links li a.link {
 		font-size: 1.5rem;
 		color: white;
+		margin-left: 0;
+	}
+
+	.nav-links li.contact-icons {
+		margin-left: 0;
 	}
 
 	/* contact button */
