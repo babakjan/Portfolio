@@ -8,7 +8,7 @@ const hamburgerLines = document.querySelectorAll(".hamburger .line");
 /**
  * toggle hamburger menu
  */
-const hamburgerOnClick = () => {
+function hamburgerOnClick() {
 	toggleClassWithDelay(logoWhite, "nav-opened", 100, 650);
 	toggleClassWithDelay(logoBlack, "nav-opened", 100, 650);
 	hamburgerLines.forEach((line) => toggleClassWithDelay(line, "nav-opened", 0, 750));

@@ -39,14 +39,14 @@
 
 .landing .left-column p {
 	margin-top: 2rem;
-	/* margin-bottom: 2rem; */
 }
 
 /* chevron */
 
-.landing .chevron {
+.landing #chevron {
 	align-self: flex-end;
 	margin: auto 2rem 2rem 2rem;
+	cursor: pointer;
 }
 
 /* sparkles */
@@ -138,7 +138,7 @@
 
 	/* chevron */
 
-	.landing .chevron {
+	.landing #chevron {
 		display: none;
 	}
 
@@ -178,7 +178,6 @@
 
 	.landing .left-column p {
 		margin-top: 1rem;
-		/* margin-bottom: 1rem; */
 	}
 }
 

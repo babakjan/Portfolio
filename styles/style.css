@@ -36,10 +36,6 @@
 	--radius-small: 6px;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	font-family: "Poppins", sans-serif;
 	color: var(--color-black);
@@ -81,11 +77,12 @@ strong {
 }
 
 section {
-	margin: 10.5rem 0;
+	margin: 6.5rem 0;
+	padding-top: 4rem;
 }
 
 article {
-	margin: 8rem 0;
+	margin-bottom: 8rem;
 }
 
 a {
@@ -175,6 +172,20 @@ a svg.icon:hover {
 	gap: 0.5rem;
 }
 
+/* reveal on scroll */
+
+.reveal-on-scroll {
+	/* position: relative; */
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.reveal-on-scroll.revealed {
+	transform: translateY(0);
+	opacity: 1;
+}
+
 @media screen and (max-width: 1340px) {
 	:root {
 		--font-h1: normal bold 3.95rem / normal "Roboto", sans-serif;
@@ -185,11 +196,12 @@ a svg.icon:hover {
 	}
 
 	section {
-		margin: 8rem 0;
+		margin: 4rem 0;
+		padding-top: 4rem;
 	}
 
 	article {
-		margin: 6rem 0;
+		margin-bottom: 6rem;
 	}
 }
 
@@ -208,11 +220,11 @@ a svg.icon:hover {
 	}
 
 	section {
-		margin: 6rem 0;
+		margin: 2rem 0;
 	}
 
 	article {
-		margin: 4.5rem 0;
+		margin-bottom: 4.5rem;
 	}
 }
 

@@ -4,8 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Jan Babák</title>
 
+		<!-- favicon -->
 		<link rel="icon" type="image/x-icon" href="images/favicon.svg" />
 
 		<!-- css -->
@@ -18,7 +20,8 @@
 		<link rel="stylesheet" href="styles/footer.css" />
 
 		<!-- js -->
-		<script src="scripts/app.js" defer></script>
+		<script src="scripts/hamburgerMenu.js" defer></script>
+		<script src="scripts/scrollAnimations.js" defer></script>
 	</head>
 	<body id="home">
 		<!-- header -->
@@ -33,10 +36,10 @@
 
 				<!-- navigation links -->
 				<ul class="nav-links">
-					<li><a href="#" class="active link">Domů</a></li>
-					<li><a href="#about" class="link">O mně</a></li>
-					<li><a href="#projects" class="link">Projekty</a></li>
-					<li><a href="#contact" class="link">Kontakt</a></li>
+					<li><a href="#" class="active link" id="navbar-home-link">Domů</a></li>
+					<li><a href="#about" class="link" id="navbar-about-link">O mně</a></li>
+					<li><a href="#projects" class="link" id="navbar-projects-link">Projekty</a></li>
+					<li><a href="#contact" class="link" id="navbar-contact-link">Kontakt</a></li>
 
 					<!-- contact icons -->
 					<li class="contact-icons">
@@ -142,7 +145,7 @@
 				</div>
 
 				<!-- chevron -->
-				<a href="#about" class="chevron">
+				<a id="chevron">
 					<img src="images/homepage/chevron.svg" alt="šipka scrolluj" />
 				</a>
 
@@ -182,7 +185,7 @@
 			<!-- about -->
 			<section id="about">
 				<!-- about me -->
-				<article class="about-me">
+				<article class="about-me reveal-on-scroll">
 					<!-- left column -->
 					<div class="left-column">
 						<img src="images/homepage/aboutme.jpg" alt="vývojář před tabulí" />
@@ -211,7 +214,7 @@
 				</article>
 
 				<!-- skills -->
-				<article class="skills">
+				<article class="skills reveal-on-scroll">
 					<h3>Znalosti</h3>
 
 					<p>
@@ -289,7 +292,7 @@
 				</article>
 
 				<!-- education -->
-				<article class="education">
+				<article class="education reveal-on-scroll">
 					<!-- left column -->
 					<div class="left-column">
 						<h3>Vzdělání a certifikáty</h3>
@@ -324,12 +327,16 @@
 
 			<!-- procects -->
 			<section id="projects">
-				<h2>Projekty</h2>
+				<div class="reveal-on-scroll">
+					<h2>Projekty</h2>
 
-				<p>Zde uvádím pár projektů, které jsem tvořil nebo na kterých jsem se podílel.</p>
+					<p>
+						Zde uvádím pár projektů, které jsem tvořil nebo na kterých jsem se podílel.
+					</p>
+				</div>
 
 				<!-- administrace -->
-				<article>
+				<article class="reveal-on-scroll">
 					<h3>Frontend Administrace e-shopů</h3>
 
 					<p>
@@ -341,7 +348,7 @@
 						<a href="#">více</a>
 					</p>
 
-					<a href="#" class="screenshot">
+					<a href="#">
 						<img
 							src="images/projects/administration-desktop.png"
 							alt="Administrace desktop snímek obrazovky"
@@ -351,7 +358,7 @@
 				</article>
 
 				<!-- Moneybag -->
-				<article>
+				<article class="reveal-on-scroll">
 					<h3>Moneybag</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
@@ -371,7 +378,7 @@
 				</article>
 
 				<!-- Cryptify -->
-				<article>
+				<article class="reveal-on-scroll">
 					<h3>Cryptify</h3>
 					<p>
 						Cryptify je <strong>mobilní aplikace</strong> sloužící ke
@@ -398,7 +405,7 @@
 			</section>
 
 			<!-- Contact -->
-			<section id="contact">
+			<section id="contact" class="reveal-on-scroll">
 				<!-- left column -->
 				<div class="left-column">
 					<h2>Kontakt</h2>
