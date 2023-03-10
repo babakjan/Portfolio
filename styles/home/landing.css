@@ -106,6 +106,8 @@
 	align-self: flex-end;
 	margin: auto 2rem 2rem 2rem;
 	cursor: pointer;
+	background: none;
+	border: none;
 }
 
 /* sparkles */
