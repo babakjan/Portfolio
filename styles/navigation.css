@@ -46,23 +46,23 @@ header nav {
 }
 
 .nav-links li:nth-child(1) {
-	transition: all 0.75s ease 0.15s;
+	transition: all 0.75s ease 0.35s;
 }
 
 .nav-links li:nth-child(2) {
-	transition: all 0.75s ease 0.3s;
-}
-
-.nav-links li:nth-child(3) {
-	transition: all 0.75s ease 0.45s;
-}
-
-.nav-links li:nth-child(4) {
 	transition: all 0.75s ease 0.6s;
 }
 
-.nav-links li:nth-child(5) {
+.nav-links li:nth-child(3) {
 	transition: all 0.75s ease 0.75s;
+}
+
+.nav-links li:nth-child(4) {
+	transition: all 0.75s ease 0.9s;
+}
+
+.nav-links li:nth-child(5) {
+	transition: all 0.75s ease 1.05s;
 }
 
 li.fade-desktop {

@@ -1,3 +1,26 @@
+/* loading */
+
+.initial-loading {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: var(--color-primary);
+	color: white;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+.initial-loading img {
+	max-width: 12rem;
+}
+
+.initial-loading.hide {
+	display: none;
+}
+
 /* landing */
 
 .landing {

@@ -1,3 +1,4 @@
+const initialLoading = document.querySelector(".initial-loading");
 const landingProposition = document.querySelector(".landing h1");
 const landingParagraph = document.querySelector(".landing .left-column p");
 const landingCTOs = document.querySelector(".landing .left-column .btns");
@@ -14,8 +15,12 @@ const fadeElements = [
 	...landingSparkles,
 ];
 
-window.addEventListener("load", () => {
-	for (const item of fadeElements) {
-		item.classList.add("fade");
-	}
+window.addEventListener("load", async () => {
+	setTimeout(() => {
+		initialLoading.classList.add("hide");
+
+		for (const item of fadeElements) {
+			item.classList.add("fade");
+		}
+	}, 750); //750 ms showing loading screen with logo
 });
