@@ -50,40 +50,35 @@
 	margin-left: 8rem;
 }
 
-.landing h1,
-.landing p,
-.landing .btns,
-.landing .arrow,
-.landing .focal-point,
-.landing .sparkle {
+.reveal-on-load {
 	opacity: 0;
 }
 
-.landing .fade {
+.landing .reveal {
 	opacity: 1;
 }
 
-.landing .fade-first {
+.landing .reveal-first {
 	transition: opacity 0.75s ease 0.9s;
 }
 
-.landing .fade-second {
+.landing .reveal-second {
 	transition: opacity 0.75s ease 1.05s;
 }
 
-.landing .fade-third {
+.landing .reveal-third {
 	transition: opacity 0.75s ease 1.2s;
 }
 
-.landing .fade-forth {
+.landing .reveal-forth {
 	transition: opacity 0.75s ease 1.35s;
 }
 
-.landing .fade-fifth {
+.landing .reveal-fifth {
 	transition: opacity 0.75s ease 1.5s;
 }
 
-.landing .fade-sixth {
+.landing .reveal-sixth {
 	transition: opacity 0.75s ease 1.65s;
 }
 /* right column */
@@ -254,27 +249,27 @@
 		margin-left: auto;
 	}
 
-	.landing .fade-fifth {
+	.landing .reveal-fifth {
 		transition: opacity 0.75s ease 0s;
 	}
 
-	.landing .fade-first {
+	.landing .reveal-first {
 		transition: opacity 0.75s ease 0.25s;
 	}
 
-	.landing .fade-second {
+	.landing .reveal-second {
 		transition: opacity 0.75s ease 0.4s;
 	}
 
-	.landing .fade-third {
+	.landing .reveal-third {
 		transition: opacity 0.75s ease 0.55s;
 	}
 
-	.landing .fade-forth {
+	.landing .reveal-forth {
 		transition: opacity 0.75s ease 0.7s;
 	}
 
-	.landing .fade-sixth {
+	.landing .reveal-sixth {
 		transition: opacity 0.75s ease 0.85s;
 	}
 

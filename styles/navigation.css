@@ -65,7 +65,7 @@ header nav {
 	transition: all 0.75s ease 1.05s;
 }
 
-li.fade-desktop {
+li.reveal-desktop {
 	opacity: 1;
 	transform: translateY(0);
 }
@@ -266,7 +266,7 @@ li.fade-desktop {
 		background: none;
 	}
 
-	li.fade {
+	li.reveal {
 		opacity: 1;
 	}
 }

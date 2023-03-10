@@ -7,7 +7,7 @@ const hamburgerLines = document.querySelectorAll(".hamburger .line");
 
 window.addEventListener("load", () => {
 	if (window.innerWidth > 750) {
-		navbarLinks.forEach((link) => link.classList.toggle("fade-desktop"));
+		navbarLinks.forEach((link) => link.classList.toggle("reveal-desktop"));
 	}
 });
 
@@ -22,7 +22,7 @@ function hamburgerOnClick() {
 
 	//when page is loaded, there aren't state attribute - animation don't fire on page load,
 	//when button is click add or remove the state
-	navbarLinks.forEach((link) => link.classList.toggle("fade"));
+	navbarLinks.forEach((link) => link.classList.toggle("reveal"));
 	const currentState = hamburger.getAttribute("data-state");
 	if (!currentState || currentState === "closed") {
 		hamburger.setAttribute("data-state", "opened");

@@ -26,7 +26,7 @@
 		<!-- js -->
 		<script src="scripts/hamburgerMenu.js" defer></script>
 		<script src="scripts/scrollAnimations.js" defer></script>
-		<script src="scripts/fadeAnimations.js" defer></script>
+		<script src="scripts/revealAnimations.js" defer></script>
 	</head>
 	<body id="home">
 		<!-- loading -->
@@ -145,26 +145,26 @@
 				<!-- left column -->
 				<div class="left-column">
 					<!-- proposition -->
-					<h1 class="fade-first">
+					<h1 class="reveal-first reveal-on-load">
 						Full-stack <br />
 						web developer
 					</h1>
 
-					<p class="fade-second">
+					<p class="reveal-second reveal-on-load">
 						Hi, my name is Jan Babák, and I specialize in web development. I enjoy
 						working with technology such as JavaScript/TypeScript, Java, Spring Boot,
 						and Swift.
 					</p>
 
 					<!-- buttons -->
-					<div class="btns fade-third">
+					<div class="btns reveal-third reveal-on-load">
 						<a href="#contact" class="btn btn-secondary">Contact</a>
 						<a href="#projects" class="btn btn-primary">Projects</a>
 					</div>
 					<img
 						src="images/homepage/arrow.svg"
 						alt="arrow pointing to projects link"
-						class="arrow fade-forth"
+						class="arrow reveal-forth reveal-on-load"
 					/>
 				</div>
 
@@ -178,36 +178,38 @@
 					<img
 						src="images/homepage/landing.webp"
 						alt="developer behind the computer"
-						class="focal-point fade-fifth"
+						class="focal-point reveal-fifth reveal-on-load"
 					/>
 				</div>
 
 				<!-- sparkles -->
-				<img
-					src="images/homepage/sparkles/purple-dot-big.svg"
-					alt="purple dot"
-					class="sparkle purple-dot-big fade-sixth"
-				/>
-				<img
-					src="images/homepage/sparkles/purple-dot-small.svg"
-					alt="purple dot"
-					class="sparkle purple-dot-small fade-sixth"
-				/>
-				<img
-					src="images/homepage/sparkles/orange-dot.svg"
-					alt="orange dot"
-					class="sparkle orange-dot1 fade-sixth"
-				/>
-				<img
-					src="images/homepage/sparkles/orange-triangle.svg"
-					alt="orange triangle"
-					class="sparkle orange-triangle fade-sixth"
-				/>
-				<img
-					src="images/homepage/sparkles/orange-dot.svg"
-					alt="orange dot"
-					class="sparkle orange-dot2 fade-sixth"
-				/>
+				<div class="reveal-sixth reveal-on-load">
+					<img
+						src="images/homepage/sparkles/purple-dot-big.svg"
+						alt="purple dot"
+						class="sparkle purple-dot-big"
+					/>
+					<img
+						src="images/homepage/sparkles/purple-dot-small.svg"
+						alt="purple dot"
+						class="sparkle purple-dot-small"
+					/>
+					<img
+						src="images/homepage/sparkles/orange-dot.svg"
+						alt="orange dot"
+						class="sparkle orange-dot1"
+					/>
+					<img
+						src="images/homepage/sparkles/orange-triangle.svg"
+						alt="orange triangle"
+						class="sparkle orange-triangle"
+					/>
+					<img
+						src="images/homepage/sparkles/orange-dot.svg"
+						alt="orange dot"
+						class="sparkle orange-dot2"
+					/>
+				</div>
 			</section>
 
 			<!-- about -->
