@@ -22,5 +22,5 @@ window.addEventListener("load", async () => {
 		for (const item of fadeElements) {
 			item.classList.add("fade");
 		}
-	}, 500); //500 ms showing loading screen with logo
+	}, 300); //300 ms showing loading screen with logo
 });
