@@ -16,11 +16,9 @@ const fadeElements = [
 ];
 
 window.addEventListener("load", async () => {
-	setTimeout(() => {
-		initialLoading.classList.add("hide");
+	initialLoading.classList.add("hide");
 
-		for (const item of fadeElements) {
-			item.classList.add("fade");
-		}
-	}, 300); //300 ms showing loading screen with logo
+	for (const item of fadeElements) {
+		item.classList.add("fade");
+	}
 });
