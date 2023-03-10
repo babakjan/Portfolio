@@ -33,7 +33,11 @@
 	--font-small: normal normal 1.125rem / normal "Poppins", sans-serif;
 
 	/* border radius */
-	--radius-small: 6px;
+	--radius-small: 0.4rem;
+	--radius-big: 0.6rem;
+
+	/* shadow */
+	--shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 body {
@@ -175,7 +179,6 @@ a svg.icon:hover {
 /* reveal on scroll */
 
 .reveal-on-scroll {
-	/* position: relative; */
 	transform: translateY(100px);
 	opacity: 0;
 	transition: all 1s ease;
@@ -184,6 +187,32 @@ a svg.icon:hover {
 .reveal-on-scroll.revealed {
 	transform: translateY(0);
 	opacity: 1;
+}
+
+/* scroll up button */
+
+#scroll-up-btn {
+	position: fixed;
+	bottom: 2rem;
+	height: 4rem;
+	border-radius: var(--radius-big);
+	width: 4rem;
+	z-index: 10;
+	background: var(--color-primary);
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	opacity: 1;
+	transform: translateY(0);
+	transition: all 0.3s ease;
+}
+
+#scroll-up-btn svg {
+	fill: white;
+}
+
+#scroll-up-btn.hidden {
+	transform: translateY(5rem);
+	opacity: 0;
 }
 
 @media screen and (max-width: 1340px) {
@@ -225,6 +254,10 @@ a svg.icon:hover {
 
 	article {
 		margin-bottom: 4.5rem;
+	}
+
+	#scroll-up-btn {
+		bottom: 1rem;
 	}
 }
 
