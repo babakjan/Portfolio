@@ -16,18 +16,22 @@ p {
 	max-width: 60rem;
 }
 
-.additional-info {
-	font: var(--font-paragraph);
-	font-weight: bold;
+.tech-stack {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+	list-style-type: none;
 }
 
-ul.tech-stack {
-	display: flex;
-	gap: 2rem;
-	margin: 0.5rem 2rem 1.5rem 1.25rem;
+.tech-stack li {
+	background: var(--color-black5);
+	font-size: 1rem;
+	line-height: normal;
+	font-weight: 500;
+	border-radius: 2rem;
+	padding: 0.5rem 2rem;
+	margin-bottom: 0;
 }
 
 .phone-mockup {
@@ -64,4 +68,22 @@ ul.tech-stack {
 	justify-content: flex-start;
 	align-content: center;
 	gap: 2rem;
+}
+
+@media screen and (max-width: 1040px) {
+	.columns {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.image-column {
+		align-self: center;
+		order: 2;
+	}
+
+	.tech-stack {
+		justify-content: center;
+	}
+
+	
 }

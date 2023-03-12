@@ -6,10 +6,30 @@
 .examples {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wraps;
+	flex-wrap: wrap;
 	gap: 2rem;
 }
 
 .conclusion {
 	margin-top: 9.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+	.examples {
+		justify-content: center;
+	}
+
+	.conclusion {
+		margin-top: 6rem;
+	}
+
+	.landing-phones {
+		max-width: 70%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.landing-phones {
+		max-width: 90%;
+	}
 }
