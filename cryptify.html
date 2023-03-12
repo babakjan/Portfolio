@@ -9,11 +9,6 @@
 			content="Cryptify is mobile application for tracking cryptocurrencies."
 		/>
 
-		<title>Cryptify</title>
-
-		<!-- favicon -->
-		<link rel="icon" type="image/x-icon" href="images/favicon.svg" />
-
 		<!-- css -->
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/navigation.css" />
@@ -23,9 +18,14 @@
 
 		<!-- js -->
 		<script src="scripts/hamburgerMenu.js" defer></script>
-		<!-- <script src="scripts/scrollAnimations.js" defer></script> -->
-		<!-- <script src="scripts/revealAnimations.js" defer></script> -->
+		<script src="scripts/scrollUpBtn.js" defer></script>
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+
+		<title>Cryptify</title>
 	</head>
+
 	<body>
 		<!-- header -->
 		<header>
@@ -135,7 +135,15 @@
 			</nav>
 		</header>
 
+		<!-- main -->
 		<main class="max-width">
+			<!-- scroll up button -->
+			<div id="scroll-up-btn" class="hidden">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+				</svg>
+			</div>
+
 			<!-- breadcrumbs -->
 			<section class="landing">
 				<div class="breadcrumbs"><a href="index.html#projects">Projects</a>/Cryptify</div>
