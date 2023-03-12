@@ -5,6 +5,7 @@ const logoWhite = document.querySelector("#logo-white");
 const logoBlack = document.querySelector("#logo-black");
 const hamburgerLines = document.querySelectorAll(".hamburger .line");
 
+// reveal navigation links after load
 window.addEventListener("load", () => {
 	if (window.innerWidth > 750) {
 		navbarLinks.forEach((link) => link.classList.toggle("reveal-desktop"));

@@ -6,7 +6,9 @@ window.addEventListener("load", setScrollUpBtnPosition);
 window.addEventListener("resize", setScrollUpBtnPosition);
 
 function setScrollUpBtnPosition() {
-	scrollUpBtn.style.right = `calc(${window.innerWidth - main.getBoundingClientRect().right}px)`;
+	scrollUpBtn.style.right = `calc(${window.innerWidth - main.getBoundingClientRect().right}px + ${
+		window.innerWidth > 570 ? 2 : 1
+	}rem)`;
 }
 
 //scroll up, when scroll up button clicked
