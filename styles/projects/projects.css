@@ -1,0 +1,67 @@
+section.landing {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.breadcrumbs {
+	font: var(--font-paragraph);
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+p {
+	max-width: 60rem;
+}
+
+.additional-info {
+	font: var(--font-paragraph);
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+ul.tech-stack {
+	display: flex;
+	gap: 2rem;
+	margin: 0.5rem 2rem 1.5rem 1.25rem;
+}
+
+.phone-mockup {
+	max-height: 40rem;
+}
+
+.columns {
+	display: flex;
+	align-content: center;
+	gap: 8rem;
+}
+
+.image-column {
+	display: flex;
+	align-items: center;
+}
+
+.link-with-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: var(--font-paragraph);
+	gap: 0.5rem;
+	font-weight: 500;
+	margin-bottom: 1.5rem;
+}
+
+.link-with-icon:hover svg.icon {
+	fill: var(--color-secondary);
+}
+
+.links-one-row {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	gap: 2rem;
+}

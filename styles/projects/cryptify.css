@@ -1,0 +1,15 @@
+.landing-phones {
+	max-width: 60%;
+	align-self: center;
+}
+
+.examples {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wraps;
+	gap: 2rem;
+}
+
+.conclusion {
+	margin-top: 9.5rem;
+}

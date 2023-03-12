@@ -57,6 +57,7 @@ body {
 
 h1 {
 	font: var(--font-h1);
+	margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -81,12 +82,12 @@ strong {
 }
 
 section {
-	margin: 6.5rem 0;
+	margin: 5rem 0;
 	padding-top: 4rem;
 }
 
 article {
-	margin-bottom: 8rem;
+	margin-bottom: 6rem;
 }
 
 a {
@@ -95,8 +96,11 @@ a {
 	transition: all 0.3s ease;
 }
 
-a:hover,
 a:visited {
+	color: var(--color-primary-washed);
+}
+
+a:hover {
 	color: var(--color-secondary);
 }
 
@@ -267,6 +271,7 @@ a svg.icon:hover {
 		--font-small: normal normal 1rem / normal "Poppins", sans-serif;
 	}
 
+	h1,
 	h2,
 	h3 {
 		margin-bottom: 1rem;
