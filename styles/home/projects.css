@@ -26,7 +26,7 @@
 #projects img.desktop {
 	width: 100%;
 	box-shadow: var(--shadow);
-	border-radius: 0.4rem;
+	border-radius: var(--radius-small);
 }
 
 @media screen and (max-width: 750px) {

@@ -34,6 +34,16 @@ p {
 	margin-bottom: 0;
 }
 
+.desktop-screenshot {
+	width: 100%;
+	border-radius: var(--radius-small);
+	box-shadow: var(--shadow);
+}
+
+.examples .desktop-screenshot {
+	margin-bottom: 3rem;
+}
+
 .phone-mockup {
 	max-height: 40rem;
 }
@@ -70,6 +80,16 @@ p {
 	gap: 2rem;
 }
 
+.conclusion {
+	margin-top: 9.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+	.conclusion {
+		margin-top: 6rem;
+	}
+}
+
 @media screen and (max-width: 1040px) {
 	.columns {
 		flex-direction: column;
@@ -84,6 +104,11 @@ p {
 	.tech-stack {
 		justify-content: center;
 	}
+}
 
-	
+@media screen and (max-width: 400px) {
+	.phone-mockup {
+		max-height: 40rem;
+		width: 100%;
+	}
 }

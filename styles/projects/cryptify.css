@@ -10,17 +10,9 @@
 	gap: 2rem;
 }
 
-.conclusion {
-	margin-top: 9.5rem;
-}
-
 @media screen and (max-width: 1080px) {
 	.examples {
 		justify-content: center;
-	}
-
-	.conclusion {
-		margin-top: 6rem;
 	}
 
 	.landing-phones {
